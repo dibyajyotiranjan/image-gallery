@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+     <div class="p">
+    {{>inde}}
+    <div class="s"><form method="Post" action="/signup" enctype="multipart/form-data">
+               <input type= "text" placeholder="Name enter" name="name" />
+               <input type="text" placeholder="Email enter" name="email"/>
+               <input type="password" placeholder="password" name="password"/>
+               <input type="file" name="sign" id="fff">
+               <input type="submit" id="submit"/>
+           </form>
+           
+    </div>
+           
+           <h3>
+            {{#each sii}}
+             {{!-- {{#each this}} 
+              {{#if email}} --}}
+                <p>email is here{{email}} </p>
+              {{!-- {{/if}}
+              {{/each}} --}}
+            {{/each}}
+            </h3>
+            
+        </div>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        .my{
+            display: none;
+        }
+        .m{
+
+        }
+        
+    </style>
+    <script  src="./js.js" ></script>
+</head>
+<body>
+ <div class="ah">
+    <div class="abody">
+        <div class="nav">
+            
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/post">Post</a></li>
+                <li><a href="/all">Profile</a></li>
+                <li><a href="/login">Resistation/Login</a></li>
+            </ul>
+        </div>
+        <form action="/com" method="Post" ...>
+        <input type="text" name="ttt" value="put" >
+        <input type="submit">
+        </form>
+        <div class="post" >
+            <div class="postf">
+                <div class="logo">
+                    
+                    <span>@divya</span>
+                </div>
+                
+                <div class="pfl">>>></div>
+            </div>
+            <div class="postm">
+                 
+            </div>
+            <div class="postl">
+               <ul>
+                   <li><button id="add" onclick="click()">Click</button>
+           <input type="number"  value="0" ></li>
+                   <li id="input">Come</li>                
+                   <li>share</li>
+               </ul>
+               <p></p>
+            </div>
+        </div>
+        {{!-- <div class="post" >
+            <div class="postf">
+                <div class="logo">
+                    
+                    <span>@divya</span>
+                </div>
+                
+                <div class="pfl">>>></div>
+            </div>
+            <div class="postm">
+                 
+            </div>
+            <div class="postl">
+               <ul>
+                   <li><button id="add" onclick="click()">Click</button>
+           <input type="number"  value="0" id="input"></li>
+                   <li>Come</li>                
+                   <li>share</li>
+               </ul>
+               <p></p>
+            </div>
+        </div>
+        <div class="post" >
+            <div class="postf">
+                <div class="logo">
+                    
+                    <span>@divya</span>
+                </div>
+                
+                <div class="pfl">>>></div>
+            </div>
+            <div class="postm">
+                 
+            </div>
+            <div class="postl">
+               <ul>
+                   <li><button id="addd">Click</button>
+           <input type="number"  value="0" id="inputt"></li>
+                   <li>Come</li>                
+                   <li>share</li>
+               </ul>
+               <p></p>
+            </div>
+        </div>
+        <div class="post" >
+            <div class="postf">
+                <div class="logo">
+                    
+                    <span>@divya</span>
+                </div>
+                
+                <div class="pfl">>>></div>
+            </div>
+            <div class="postm">
+                 
+            </div>
+            <div class="postl">
+               <ul>
+                   <li><button id="addd">Click</button>
+           <input type="number"  value="0" id="in"></li>
+                   <li>Come</li>                
+                   <li>share</li>
+               </ul>
+               <p></p>
+            </div>
+        </div> --}}
+        
+            
+        
+    </div></div>
+    <script>
+        function click(){
+    document.getElementById("input").classList.add("myname");
+}
+    </script>
+ {{!-- <script>
+     const btn=document.querySelector("#btn");
+     let remove = document.getElementById("acomm");
+     btn.addEventListener("click",()=>{
+         if(btn.classList==="m"){
+            remove.classList.remove("m"); 
+            remove.classList.toggle("mm");
+         }
+          else{
+              remove.classList.remove("mm");
+             remove.classList.toggle("m"); 
+          }
+          
+     })
+     function clickme(){
+         remove.classList.remove("mm");
+             remove.classList.toggle("m"); 
+     }
+ </script> --}}
+
+         {{!-- <script>
+ console.log("trstdsgfs");
+  document.getElementById("myDIV").innerHTML = `<div class="post" >
+            <div class="postf">
+                <div class="logo">
+                    
+                    <span>@divya</span>
+                </div>
+                
+                <div class="pfl">>>></div>
+            </div>
+            <div class="postm">
+                 
+            </div>
+            <div class="postl">
+               <ul>
+                   <li><button id="add" onclick="click()">Click</button>
+           <input type="number"  value="0" id="input"></li>
+                   <li>Come</li>                
+                   <li>share</li>
+               </ul>
+               <p></p>
+            </div>
+        </div>`
+
+
+             var web=["dibya","jyoti","ranjan","hei"];
+             web.forEach((element,index)=>{
+                document.getElementById('myDIV').innerHTML += `<div class="post" >
+            <div class="postf">
+                <div class="logo">
+                    
+                    <span>@divya</span>
+                </div>
+                
+                <div class="pfl">>>></div>
+            </div>
+            <div class="postm">
+               g" >
+            </div>
+            <div class="postl">
+               <ul>
+                   <li>like</li>
+                   <li>Come</li>                
+                   <li>share</li>
+               </ul>
+               <div>${element} </div><br>
+            </div>
+        </div>`
+             })
+         
+  //document.getElementById("myDIV") = "newClassName";
+</script> --}}
+</body>
+</html>
+
+
+
+
+{{!-- <script>
+        console.log("hihi")
+        
+        let newsAccordion = document.getElementById('news');
+        newsAccordion.innerHTML = <div> dibya jyoti ranjan</div>;
+
+
+// Create an ajax get request
+const xhr = new XMLHttpRequest();
+xhr.open('GET', `http://localhost:3000/all`, true);
+
+// What to do when response is ready
+xhr.onload = function () {
+    if (this.status === 200) {
+        let json = JSON.parse(this.responseText);
+        let articles = json.articles;
+        console.log(articles);
+        let newsHtml = "";
+        articles.forEach(function(element, index) {
+            // console.log(element, index)
+            let news = ` <div class="post" id="post${index}">
+            <div class="postf">
+                <div class="logo">
+                    {{!-- <img src="./image/pexels-taryn-elliott-4144459.jpg" alt=""> 
+                    <span>@divya</span>
+                </div>
+                
+                <div class="pfl">>>></div>
+            </div>
+            <div class="postm">
+                <img src="${element['pic']}" alt="">
+            </div>
+            <div class="postl">
+               <ul>
+                   <li>like</li>
+                   <li>Come</li>                
+                   <li>share</li>
+               </ul>
+            </div>
+        </div> `;
+            newsHtml += news;
+        });
+        newsAccordion.innerHTML = newsHtml;
+    }
+    else {
+        console.log("Some error occured")
+    } 
+
+
+}
+    </script> --}}
+    {{!-- function myFunction() {
+     let json = JSON.parse(this.responseText);
+        let articles = json.articles;
+        console.log(articles);
+    document.getElementById("myDIV").innerHTML = `<div class="post" >
+            <div class="postf">
+                <div class="logo">
+                    
+                    <span>@divya</span>
+                </div>
+                
+                <div class="pfl">>>></div>
+            </div>
+            <div class="postm">
+               
+            </div>
+            <div class="postl">
+               <ul>
+                   <li>like</li>
+                   <li>Come</li>                
+                   <li>share</li>
+               </ul>
+            </div>
+        </div>`  ; --}}
+{{!-- 
+        let newsAccordion = document.getElementById('myDIV');
+          newsAccordion.forEach((element,index)=>{
+              console.log(element,index);
+          })
+        newsAccordion.innerHTML = ` <div class="post">
+            <div class="postf">
+                <div class="logo">
+                   
+                    <span>@divya</span>
+                </div>
+                
+                <div class="pfl">>>></div>
+            </div>
+            <div class="postm">
+               
+            </div>
+            <div class="postl">
+               <ul>
+                   <li>like</li>
+                   <li>Come</li>                
+                   <li>share</li>
+               </ul>
+            </div>
+        </div>`; --}}
+
+
+              {{!-- <div >
+           <button id="add">Click</button>
+           <input type="number"  value="0">
+           <button id="sub" class="ad">Click</button>
+            </div>
+        </div> --}}
+
+           {{!-- <script>
+       let btnAdd=document.querySelector("#add")
+       let subAdd = document.querySelector("#sub")
+       let input=document.querySelector("input")
+        btnAdd.addEventListener('click',()=>{
+            input.value=parseInt(input.value)+1;
+            document.getElementById("add").classList.add("my");
+
+        });
+         subAdd.addEventListener('click',()=>{
+            input.value=parseInt(input.value)-1;
+            document.getElementById("sub").classList.add("m");
+        });
+    </script> --}}
